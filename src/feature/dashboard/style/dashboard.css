@@ -1,7 +1,129 @@
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.display--block {
+  display: block;
+}
+
+.display--none {
+  display: none;
+}
+
+.from-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(red -41%, yellow 85%);
+}
+.from-container .from-details {
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.5490196078);
+  height: 400px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.from-container .from-details .amount-detail {
+  outline: none;
+  border: 1px solid #000;
+  padding: 10px;
+  width: 300px;
+  font-size: 17px;
+  height: 40px;
+  margin: 10px 0px;
+  border-radius: 7px;
+}
+.from-container .from-details .description {
+  outline: none;
+  border: 1px solid #000;
+  padding: 10px;
+  width: 300px;
+  font-size: 17px;
+  height: 40px;
+  margin: 10px 0px;
+  border-radius: 7px;
+}
+.from-container .from-details .add-expense-title {
+  font-size: 24px;
+  color: #fff;
+  padding: 30px 0px;
+}
+.from-container .from-details div {
+  width: 100%;
+}
+.from-container .from-details div .dropdown {
+  margin: 10px auto;
+  z-index: 10000;
+  width: 300px;
+  position: relative;
+}
+.from-container .from-details div .dropdown .dropdown-btn {
+  width: 100%;
+  cursor: pointer;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  z-index: 13;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 500;
+}
+.from-container .from-details div .dropdown .dropdown-btn svg {
+  height: 15px;
+  width: 15px;
+}
+.from-container .from-details div .dropdown .dropdown-content {
+  top: 100%;
+  background-color: #fff;
+  color: #000;
+  left: 0;
+  z-index: 12;
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.07);
+}
+.from-container .from-details div .dropdown .dropdown-content .item {
+  padding: 10px;
+  cursor: pointer;
+}
+.from-container .from-details .form-detail {
+  display: flex;
+  flex-direction: column;
+}
+.from-container .from-details .form-detail .add-expense-btn {
+  cursor: pointer;
+  background: #0059b3;
+  color: #fff;
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+  border-radius: 7px;
+  height: 41px;
+  width: 130px;
+  transition: 0.2s;
+}
+.from-container .from-details .form-detail .add-expense-btn:hover {
+  background-color: #034991;
+}
+.from-container .from-details .form-detail .add-expense-btn:disabled {
+  background-color: rgba(255, 255, 255, 0.3019607843);
+  color: rgba(0, 0, 0, 0.3019607843);
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+}
+.from-container .from-details .form-detail .error-message {
+  color: red;
+  font-size: 14px;
+  text-align: left;
+  width: 300px;
 }
 
 input {

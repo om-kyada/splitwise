@@ -1,0 +1,60 @@
+.add-expense-detail-container {
+    width: 100%;
+
+    .not-paid {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        .add-expense-detail {
+            padding: 10px;
+            width: 30%;
+
+            table {
+                border-radius: 15px;
+
+                tbody {
+                    border-radius: 10px;
+                    border-radius: 9px;
+
+                    tr {
+                        background-color: rgb(203, 203, 203);
+
+                        td {
+                            padding: 10px;
+                            // margin: 2px;
+                            display: table-cell;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// table tbody {
+//     background-color: white;
+// }
+
+// table tbody td {
+//     display: table-cell
+// }
+
+table tbody tr:first-child td:first-child {
+    border-top-left-radius: 5px;
+}
+
+table tbody tr:first-child td:last-child {
+    border-top-right-radius: 5px;
+}
+
+table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+}

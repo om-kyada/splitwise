@@ -1,0 +1,45 @@
+.add-expense-detail-container {
+  width: 100%;
+}
+.add-expense-detail-container .not-paid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.add-expense-detail-container .not-paid .add-expense-detail {
+  padding: 10px;
+  width: 30%;
+}
+.add-expense-detail-container .not-paid .add-expense-detail table {
+  border-radius: 15px;
+}
+.add-expense-detail-container .not-paid .add-expense-detail table tbody {
+  border-radius: 10px;
+  border-radius: 9px;
+}
+.add-expense-detail-container .not-paid .add-expense-detail table tbody tr {
+  background-color: rgb(203, 203, 203);
+}
+.add-expense-detail-container .not-paid .add-expense-detail table tbody tr td {
+  padding: 10px;
+  display: table-cell;
+}
+
+table tbody tr:first-child td:first-child {
+  border-top-left-radius: 5px;
+}
+
+table tbody tr:first-child td:last-child {
+  border-top-right-radius: 5px;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}/*# sourceMappingURL=addExpenseDetail.css.map */

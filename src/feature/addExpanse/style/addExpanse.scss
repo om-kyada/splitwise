@@ -9,28 +9,111 @@ div {
         font-size: 17px;
     }
 
-    .new-user {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
+    .new-user-back-img {
+        background: radial-gradient(red -41%, yellow 85%);
+        width: 100%;
+        height: 100vh;
 
-        input {
-            width: 200px;
-            height: 50px;
-            margin: 10px;
-        }
-
-        .new-user-add {
-            width: 50px;
-            height: 50px;
-            border-radius: 7px;
+        .new-user {
+            width: 50%;
+            height: 50%;
+            background-color: #0000008c;
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
-            text-align: center;
-            font-size: 17px;
-            border: 1px dashed #000;
+            border-radius: 20px;
+            position: relative;
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                div {
+                    height: 92px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    .input-error-message {
+                        display: flex;
+                        flex-direction: column;
+
+                        input {
+                            padding: 10px;
+                            width: 200px;
+                            height: 50px;
+                            margin: 10px;
+                        }
+
+                        .error-message {
+                            width: 100%;
+                            font-size: 14px;
+                            color: red;
+                            text-align: left;
+                            padding: 0px 10px;
+                        }
+                    }
+                }
+
+                .new-user-add {
+                    padding: 10px;
+                    margin: 10px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 7px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 17px;
+                    border: 1px solid #000;
+                }
+
+                .member-lists {
+                    background-color: #fff;
+                    height: 164px;
+                    width: 270px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 10px;
+                    overflow: auto;
+                    margin: 10px;
+                    align-items: flex-start;
+                    border-radius: 7px;
+
+                    .member-list-title {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .add-expense {
+                cursor: pointer;
+                background: #0059b3;
+                color: #fff;
+                position: absolute;
+                bottom: 7%;
+                right: 4%;
+                border-radius: 7px;
+                height: 41px;
+                width: 130px;
+                transition: .2s;
+
+                &:hover {
+                    background-color: #034991;
+                }
+
+                &:disabled {
+                    background-color: #ffffff4d;
+                    color: #0000004d;
+                    position: absolute;
+                    bottom: 7%;
+                    right: 4%;
+                }
+            }
         }
     }
 }
