@@ -1,6 +1,5 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
-import { IconIndianRupeesLogo } from '../../../component/icon/icons';
 import '../style/addExpenseDetail.css'
 
 function AddExpenseDetail() {
