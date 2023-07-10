@@ -20,7 +20,7 @@ const Dashboard = () => {
             <div className="from-container">
 
                 <div className="from-details">
-                    <h2 className='add-expense-title'>Add Expense</h2>
+                    <h2 className='add-expense-title'>Settle</h2>
                     <UserSelect onSelect={setSelectedUser} />
                     <div className='form-detail' >
                         <input className='amount-detail' type="number" value={amount} placeholder='Enter amount' onChange={e => setAmount(e.target.value)} />
@@ -62,7 +62,7 @@ const Dashboard = () => {
                                 }
 
                             }}>
-                            Add Expense
+                            Settle
 
                         </button>
                         <div className="expense-detail"
