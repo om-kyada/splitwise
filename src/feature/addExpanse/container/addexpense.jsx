@@ -30,7 +30,6 @@ const AddExpense = () => {
                                     setId(prevId => prevId + 1);
                                     id >= 3 && setIsFieldEmpty(false);
                                     id === 3 && setActive(false);
-                                    console.log(id, name)
                                 }
                                 else {
                                     id <= 3 && setIsFieldEmpty(true);

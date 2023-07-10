@@ -27,7 +27,7 @@ const Dashboard = () => {
                         <input className='description' type="text" value={description} placeholder='Enter description' onChange={e => setDescription(e.target.value)} />
                         {isFieldEmpty && <p className="error-message">Please fill in all fields</p>}
                         {isNegativeValue && <p className="error-message">Amount cannot be negative</p>}
-                        {/* <Link to="/add-expense-detail"> */}
+
                         <button
                             className='add-expense-btn'
                             type='button'
@@ -57,7 +57,6 @@ const Dashboard = () => {
                                     const expenses = JSON.parse(localStorage.getItem('expenses')) || [];
                                     expenses.push(expense);
                                     localStorage.setItem('expenses', JSON.stringify(expenses));
-                                    console.log(expenses)
                                     navigate('/add-expense-detail', { state: { expenses, data } })
                                 }
 
@@ -81,9 +80,6 @@ const Dashboard = () => {
                                         <p>
                                             {userName.name}
                                         </p>
-                                        {/* <p className='divide-amount'>
-                                    {divideAmount}
-                                </p> */}
                                         <p className="divide-amount">{selectedUser === userName ? 0 : divideAmount}</p>
                                     </div>)
                                 })

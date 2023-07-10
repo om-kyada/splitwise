@@ -4,9 +4,7 @@ import '../style/addExpenseDetail.css'
 
 function AddExpenseDetail() {
     const location = useLocation();
-    console.log(location)
     const data = location.state.expenses;
-    console.log(data);
     const names = location.state.data;
     return (
         <div className='add-expense-detail-container'>

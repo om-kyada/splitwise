@@ -6,7 +6,6 @@ import "../style/dashboard.css"
 function UserSelect({ onSelect }) {
     const [isActive, setIsActive] = useState(false);
     const [selected, setIsSelected] = useState("Who paid");
-    // console.log(selected)
 
 
     const location = useLocation();
@@ -14,7 +13,6 @@ function UserSelect({ onSelect }) {
 
     return (
         <div>
-            {/* <input type="text" placeholder='Select user' onKeyUp={searchFunction} /> */}
             <div className='dropdown'>
                 <div className="dropdown-btn" onClick={(e) => {
                     setIsActive(!isActive);
@@ -27,19 +25,18 @@ function UserSelect({ onSelect }) {
                 <div className="dropdown-content"
                     style={{ display: isActive ? "block" : "none" }}>
                     {
-                        /*data.length > 0 &&*/ data?.map((userName, index) => {
-                        return (<div key={index}
-                            className="item"
-                            onClick={(e) => {
-                                setIsSelected(e.target.textContent);
-                                setIsActive(!isActive);
-                                onSelect(userName)
-                            }}
-                        >
-                            {userName.name}
-                            {/* {console.log(selected)} */}
-                        </div>)
-                    })
+                        data?.map((userName, index) => {
+                            return (<div key={index}
+                                className="item"
+                                onClick={(e) => {
+                                    setIsSelected(e.target.textContent);
+                                    setIsActive(!isActive);
+                                    onSelect(userName)
+                                }}
+                            >
+                                {userName.name}
+                            </div>)
+                        })
                     }
                 </div>
             </div>

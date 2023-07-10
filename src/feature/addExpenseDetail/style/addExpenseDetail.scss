@@ -31,7 +31,6 @@
 
                         td {
                             padding: 10px;
-                            // margin: 2px;
                             display: table-cell;
                         }
                     }
@@ -40,14 +39,6 @@
         }
     }
 }
-
-// table tbody {
-//     background-color: white;
-// }
-
-// table tbody td {
-//     display: table-cell
-// }
 
 table tbody tr:first-child td:first-child {
     border-top-left-radius: 5px;
