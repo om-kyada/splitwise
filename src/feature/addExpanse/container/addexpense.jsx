@@ -15,6 +15,7 @@ const AddExpense = () => {
             <div className="new-user-back-img">
 
                 <div className="new-user">
+                    <h2 className="split-wise-title">Split Wise</h2>
                     <form>
                         <div>
                             <div className="input-error-message">
@@ -27,13 +28,12 @@ const AddExpense = () => {
                                     setArtists([...artists, { id: id, name: name }]);
                                     setName('');
                                     setId(prevId => prevId + 1);
-                                    setIsFieldEmpty(false);
+                                    id >= 3 && setIsFieldEmpty(false);
                                     id === 3 && setActive(false);
-                                    // id >= 3 && setActive(false);
                                     console.log(id, name)
                                 }
                                 else {
-                                    setIsFieldEmpty(true);
+                                    id <= 3 && setIsFieldEmpty(true);
                                     id === 3 && setActive(true);
                                 };
                             }}

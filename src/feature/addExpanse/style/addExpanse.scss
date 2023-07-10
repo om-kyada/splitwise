@@ -10,27 +10,36 @@ div {
     }
 
     .new-user-back-img {
-        background: radial-gradient(red -41%, yellow 85%);
+        background: url("../../../images//pexels-sohel-patel-68912.jpg");
+        background-size: cover;
+        background-attachment: fixed;
         width: 100%;
         height: 100vh;
 
         .new-user {
-            width: 50%;
-            height: 50%;
-            background-color: #0000008c;
+            width: 40%;
+            height: 75%;
+            background-color: rgba(0, 0, 0, 0.814);
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-direction: column;
             align-items: center;
             border-radius: 20px;
             position: relative;
 
+            .split-wise-title {
+                color: #fff;
+                padding: 20px;
+            }
+
             form {
                 display: flex;
+                width: 100%;
                 flex-direction: column;
 
                 div {
                     height: 92px;
+                    width: 100%;
                     display: flex;
                     flex-direction: row;
                     align-items: flex-start;
@@ -42,7 +51,7 @@ div {
 
                         input {
                             padding: 10px;
-                            width: 200px;
+                            width: 95%;
                             height: 50px;
                             margin: 10px;
                         }
@@ -74,12 +83,12 @@ div {
                 .member-lists {
                     background-color: #fff;
                     height: 164px;
-                    width: 270px;
+                    width: 92%;
                     display: flex;
                     flex-direction: column;
                     padding: 10px;
                     overflow: auto;
-                    margin: 10px;
+                    margin: 10px auto;
                     align-items: flex-start;
                     border-radius: 7px;
 
